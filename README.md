@@ -1,6 +1,17 @@
 # rankftc
 RankFTC allows you to up your scouting game by comparing your team against the rest of the teams going to a match. Given a team and match, RankFTC generates multiple lists ranking your team against the competition.
 
+Check out the [demo video](https://youtu.be/Fg-wboRkQoY) to see RankFTC in action.
+
+## Install
+RankFTC is a Bash script that you download with cURL every time you need to run it. However, this does come with some requirements.
+
+#### Running on Windows
+Running a Bash script on Windows is especially tricky given how, y'know, it doesn't support Bash. So, you need to run RankFTC inside WSL2.
+
+#### Dependencies
+Most of RankFTC's dependencies are common to the average distro, with one notable exception, `jq`. It's available on most repositories, so just install it using your package manager of choice. Alternatively, you can visit [this website](https://jqlang.github.io/jq/) to download the binary directly.
+
 ## Usage
 To use RankFTC, you'll need your team number, the match code for the match you want to compare, and that match's season. Oftentimes you won't know your match code off the top of your head, so you can use RankFTC's search command.
 
