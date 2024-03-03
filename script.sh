@@ -63,7 +63,7 @@ REQUESTED_TEAM=$(curl 'https://api.ftcscout.org/graphql' -s -H 'Accept-Encoding:
 REQUESTED_TEAM_RESULT=$(jq --arg third "$third" '.data.teamByNumber.events[] | select(.eventCode == $third)' <<< "$REQUESTED_TEAM")
 
 if [[ -z "$REQUESTED_TEAM_RESULT" ]]; then
-    echo -e "The team $third does not seem to be participating in the match $fourth."
+    echo -e "The team $fourth does not seem to be participating in the match $third."
     exit 1
 fi
 
