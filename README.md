@@ -20,7 +20,7 @@ Displays a list of potential matches along with their match codes based on the a
 
 #### **Command**
 ```bash
-curl -s https://rankftc.thomasricci.dev | bash -s -- search <season> <match name>
+curl -sL https://rankftc.thomasricci.dev | bash -s -- search <season> <match name>
 ```
 
 #### **Arguments**
@@ -32,7 +32,7 @@ curl -s https://rankftc.thomasricci.dev | bash -s -- search <season> <match name
 #### **Example**
 To find the Massachusetts State Championship for the 2023-2024 CENTERSTAGE season, use:
 ```bash
-curl -s https://rankftc.thomasricci.dev | bash -s -- search 2023 "Massachusetts State Championship"
+curl -sL https://rankftc.thomasricci.dev | bash -s -- search 2023 "Massachusetts State Championship"
 ```
 
 ### Display Rankings
@@ -42,7 +42,7 @@ Also, saves tab-seperated-value files of each table in the directory the command
 
 #### **Command**
 ```bash
-curl -s https://rankftc.thomasricci.dev | bash -s -- rank <season> <match code> <team number>
+curl -sL https://rankftc.thomasricci.dev | bash -s -- rank <season> <match code> <team number>
 ```
 
 #### **Arguments**
@@ -56,7 +56,7 @@ curl -s https://rankftc.thomasricci.dev | bash -s -- rank <season> <match code> 
 #### **Example**
 To compare team 19460 to the current rankings of the other teams competing in Massachusetts State Championship for the 2023-2024 CENTERSTAGE season, use:
 ```bash
-curl -s https://rankftc.thomasricci.dev | bash -s -- rank 2023 USMACMP 19460
+curl -sL https://rankftc.thomasricci.dev | bash -s -- rank 2023 USMACMP 19460
 ```
 
 ## Contributing
